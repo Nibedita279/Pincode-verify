@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* height: 500px; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.step {
+  font-weight: 600;
+  color: #888;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  gap: 4px;
+  margin: 15px 0;
+}
+
+.progress {
+  flex: 1;
+  height: 4px;
+  background-color: #d3d3d3;
+  border-radius: 2px;
+}
+
+.progress.active {
+  background-color: #e64c3c;
+}
+
+.instruction {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.pin-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 12px ;
+}
+  
+
+.input-group {
+  text-align: left;
+  font-family: arial;
+}
+
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pin-boxes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pin-boxes input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.pin-boxes input:focus {
+  border-color: #e64c3c;
+}
+
+.eye-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.status-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e64c3c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .step {
+    font-size: 14px;
+  }
+
+  .instruction {
+    font-size: 13px;
+  }
+
+  .pin-boxes input {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .continue-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 360px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .step {
+    font-size: 13px;
+  }
+
+  .instruction {
+    font-size: 12px;
+  }
+
+  .pin-boxes input {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+  }
+
+  .continue-btn {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
+
+.response-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 300px;
+}
+.response-box h2 {
+  font-size: 18px;
+  color: #333;
+}
+.response-status {
+  margin-top: 20px;
+}
+.success {
+  color: green;
+}
+.error {
+ color: red;
+}
+

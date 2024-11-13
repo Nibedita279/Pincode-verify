@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinCode</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container"  id="container" style="display:block;">
+        <div class="header">
+            <span class="back-arrow">&gt</span>
+            <h2 id="h2">Setting up</h2>
+        </div>
+        <h1>Your PIN code</h1>
+        <p class="step">1 of 2</p>
+        
+        <div class="progress-bar">
+            <div class="progress active"></div>
+           
+            <div class="progress"></div>
+        </div>
+
+        <p class="instruction">To set up your <strong>PIN</strong> create a <strong>5 digit code</strong> then confirm it below</p>
+        
+        <div class="pin-inputs">
+            <div class="input-group">
+                <label for="pin">PIN CODE</label>
+                <div class="pin-boxes" id="pin">
+                    <input type="number" maxlength="1" class="pin" id="pin1">
+                    <input type="number" maxlength="1" class="pin" id="pin2">
+                    <input type="number" maxlength="1" class="pin" id="pin3">
+                    <input type="number" maxlength="1" class="pin" id="pin4">
+                    <input type="number" maxlength="1" class="pin" id="pin5">
+                    <input type="number" maxlength="1" class="pin" id="pin6">
+                  </div>
+                </div>
+    
+                <div class="input-group">
+                    <label for="confirm-pin">CONFIRM YOUR PIN CODE</label>
+                    <div class="pin-boxes" id="confirm-pin">
+                        <input type="password" maxlength="1" class="pin" id="confirm1" disabled>
+                        <input type="password" maxlength="1" class="pin" id="confirm2" disabled>
+                        <input type="password" maxlength="1" class="pin" id="confirm3" disabled>
+                        <input type="password" maxlength="1" class="pin" id="confirm4" disabled>
+                        <input type="password" maxlength="1" class="pin" id="confirm5" disabled>
+                        <input type="password" maxlength="1" class="pin" id="confirm6" disabled>
+                       
+                    </div>
+                </div>
+            </div>
+    
+            <p class="status-message" id="status-message" style="display: none;">Your PIN codes are the same ✅</p>
+            <p id="errorMsg" class="errors" style="display: none;">Pin codes are not Matched</p>
+            
+            <button id="continueBtn" class="continue-btn">CONTINUE</button>
+        </div>
+        <div class="response-box" id="response-box" style="display: none;">
+            <h2 id="responseMessage">Response will go here</h2>
+            <div class="response-status">
+              <p id="successMsg" class="success" style="display: none;">- Success</p>
+              <p id="errorMsg" class="error" style="display: none;">- Error</p>
+            </div>
+          </div>
+        
+          <script src="task.js"></script>
+        </body>
+        </html>
+    
+                   
